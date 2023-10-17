@@ -1,0 +1,14 @@
+{
+  "name": "grapher",
+  "version": "1.0.0",
+  "description": "math",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^11.9.1"
+  }
+}

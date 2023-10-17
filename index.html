@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas">
+    </canvas>
+    <div id="window">
+        <div id="drag"></div>
+        <div id="functions">
+           <div id="func0">
+            <p>f(x)=</p>
+            <input type="text" id="thing0" oninput="changeFunction(id)" value="sin(x+t)*x">
+            <button id="color0" onclick="changeColor(id)">c</button>
+            <button id="del0" onclick="deleteFunction(id)">x</button>
+        </div> 
+        </div>
+        
+        <div id="select">
+            <button id="add" onclick="addFunction()">add</button>
+            <button id="clear" onclick="clearFunctions()">clear</button>
+            <button id="reset" onclick="resetTimer()">reset</button>
+            <button id="pause" onclick="pauseResume()">pause</button>
+            <p id="t"></p>
+        </div>
+        
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/0.15.0/math.min.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>
